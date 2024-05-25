@@ -10,9 +10,9 @@ struct Index {
     Column(){
       //根组件
 
-
+      //置顶栏
       Row(){
-        //置顶栏
+
         Column(){
           //最上角叉子组件
           Image($rawfile('X.svg'))
@@ -63,22 +63,33 @@ struct Index {
 
 
 
-
+      //主体滚动栏
       Scroll(this.scroller){
-        //主体滚动栏
 
+        //滚动栏根组件
         Column({space:10}){
-          //滚动栏根组件
+
 
 
           Text('欢迎使用智慧零碳工厂监测平台')
             .fontSize(24.8)
             .fontWeight(700)
 
+          Image($rawfile('logo_picture.jpg'))
+            .width(200)
+            .borderRadius(100)
+            .shadow({
+              radius:100,
+              color:Color.Green
+            })
+            .margin({top:40,bottom:30})
+
           Text('绿锦升会为您提供专业高效的服务')
             .fontSize(22)
             .fontWeight(600)
             .margin({top:10})
+
+
 
           Text('请填写以下信息:')
             .fontSize(21)
@@ -86,7 +97,7 @@ struct Index {
             .margin({top:50,bottom:10})
             .alignSelf(ItemAlign.Start)
 
-
+          //基本信息栏
           Column(){
             //基本信息栏
             Text('公司基本信息')
@@ -168,7 +179,7 @@ struct Index {
           })
 
 
-
+          //项目信息栏
           Column(){
             //项目信息栏
             Text('项目具体信息')
@@ -178,8 +189,23 @@ struct Index {
               .strokeWidth(2)
               .color(Color.Black)
 
+            //公司情况
             Column(){
-              //需求
+
+              Text('公司现状：')
+                .fontSize(20)
+                .alignSelf(ItemAlign.Start)
+                .fontWeight(400)
+                .margin({top:20})
+
+              TextInput({placeholder:'请言简要描述公司现状'})
+                .height(80)
+            }
+            .width('100%')
+
+            //需求
+            Column(){
+
               Text('需求：')
                 .fontSize(20)
                 .alignSelf(ItemAlign.Start)
@@ -195,9 +221,16 @@ struct Index {
                 .fontWeight(400)
                 .margin({top:20})
 
-              Column(){
+              Column({space:20}){
                 //上传文件区域
                 Text('支持.pdf/.pptx/.zip/.doc格式文件')
+                  .fontSize(18)
+                  .fontColor('#ff928f8f')
+
+                Image($rawfile('up_load.svg'))
+                  .width(30)
+
+                Text('点击选择文件')
                   .fontSize(18)
                   .fontColor('#ff928f8f')
 
@@ -212,6 +245,14 @@ struct Index {
 
             }
             .width('100%')
+
+
+
+            Column(){
+              //
+            }
+
+
 
           }
           .width('100%')
