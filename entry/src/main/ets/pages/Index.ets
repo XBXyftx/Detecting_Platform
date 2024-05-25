@@ -296,9 +296,15 @@ struct Index {
 
           //提交按钮
           Button('确认提交')
-            .margin({top:30})
+            .margin({top:30,bottom:30})
             .width(300)
             .fontSize(20)
+            .opacity(1)
+            .stateStyles({
+              pressed:{
+                .opacity(0.5)
+              }
+            })
 
 
         }
