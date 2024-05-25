@@ -72,16 +72,16 @@ struct Index {
 
 
           Text('欢迎使用智慧零碳工厂监测平台')
-            .fontSize(26)
+            .fontSize(24.8)
             .fontWeight(700)
 
           Text('绿锦升会为您提供专业高效的服务')
-            .fontSize(24)
+            .fontSize(22)
             .fontWeight(600)
             .margin({top:10})
 
           Text('请填写以下信息:')
-            .fontSize(22)
+            .fontSize(21)
             .fontWeight(500)
             .margin({top:50,bottom:10})
             .alignSelf(ItemAlign.Start)
@@ -198,6 +198,8 @@ struct Index {
               Column(){
                 //上传文件区域
                 Text('支持.pdf/.pptx/.zip/.doc格式文件')
+                  .fontSize(18)
+                  .fontColor('#ff928f8f')
 
               }
               .width(320)
@@ -217,7 +219,7 @@ struct Index {
         }
         .width('90%')
         .backgroundColor(Color.White)
-        .padding({top:20})
+        .padding({top:20,left:5,right:5})
 
 
 
