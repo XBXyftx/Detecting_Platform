@@ -215,7 +215,7 @@ struct Index {
               TextInput({placeholder:'请尽可能清晰的描述需求'})
                 .height(150)
 
-              Text('也可以直接上传文件：')
+              Text('直接上传文件：')
                 .fontSize(20)
                 .alignSelf(ItemAlign.Start)
                 .fontWeight(400)
@@ -296,7 +296,7 @@ struct Index {
 
           //提交按钮
           Button('确认提交')
-            .margin({top:30,bottom:30})
+            .margin({top:30,bottom:80})
             .width(300)
             .fontSize(20)
             .opacity(1)
