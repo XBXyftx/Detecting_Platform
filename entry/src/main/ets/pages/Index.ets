@@ -276,14 +276,15 @@ struct Index {
               TextInput({placeholder:'20xx年/xx月/xx日'})
             }
 
+            //期望地点预约
             Column(){
-              Text('期望的面谈日期：')
+              Text('期望的面谈地点：')
                 .fontSize(20)
                 .alignSelf(ItemAlign.Start)
                 .fontWeight(400)
                 .margin({top:20})
 
-              TextInput({placeholder:'20xx年/xx月/xx日'})
+              TextInput({placeholder:'请输入面谈地点'})
             }
 
 
@@ -292,6 +293,12 @@ struct Index {
           .margin({top:20})
 
 
+
+          //提交按钮
+          Button('确认提交')
+            .margin({top:30})
+            .width(300)
+            .fontSize(20)
 
 
         }
