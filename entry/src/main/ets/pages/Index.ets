@@ -248,14 +248,51 @@ struct Index {
 
 
 
-            Column(){
-              //
-            }
 
 
 
           }
           .width('100%')
+
+
+
+          //时间预约栏
+          Column(){
+            Text('面谈预约')
+              .fontSize(20)
+
+            Divider()
+              .strokeWidth(2)
+              .color(Color.Black)
+
+            //面谈时间预约
+            Column(){
+              Text('期望的面谈日期：')
+                .fontSize(20)
+                .alignSelf(ItemAlign.Start)
+                .fontWeight(400)
+                .margin({top:20})
+
+              TextInput({placeholder:'20xx年/xx月/xx日'})
+            }
+
+            Column(){
+              Text('期望的面谈日期：')
+                .fontSize(20)
+                .alignSelf(ItemAlign.Start)
+                .fontWeight(400)
+                .margin({top:20})
+
+              TextInput({placeholder:'20xx年/xx月/xx日'})
+            }
+
+
+          }
+          .width('100%')
+          .margin({top:20})
+
+
+
 
         }
         .width('90%')
