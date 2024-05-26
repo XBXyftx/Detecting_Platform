@@ -198,7 +198,7 @@ struct Index {
                 .fontWeight(400)
                 .margin({top:20})
 
-              TextInput({placeholder:'请言简要描述公司现状'})
+              TextInput({placeholder:'请简要描述公司现状'})
                 .height(80)
             }
             .width('100%')
